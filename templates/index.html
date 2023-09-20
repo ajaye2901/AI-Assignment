@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Chatbot</title>
+</head>
+<body>
+    <h1>Course Chatbot</h1>
+    <form action="/chat" method="post">
+        <input type="text" name="user_message" placeholder="Ask me about courses...">
+        <input type="submit" value="Send">
+    </form>
+    <div id="chat-container">
+        <p>User: {{ user_message }}</p>
+        <p>Chatbot: {{ bot_response }}</p>
+    </div>
+</body>
+</html>
